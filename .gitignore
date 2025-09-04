@@ -210,3 +210,5 @@ __marimo__/
 # vscode
 .vscode 
 
+# duckdb
+*.duckdb
