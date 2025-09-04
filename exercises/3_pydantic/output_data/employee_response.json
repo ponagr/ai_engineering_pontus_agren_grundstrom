@@ -1,0 +1,184 @@
+{
+  "results": [
+    {
+      "first_name": "Anna",
+      "last_name": "Karlsson",
+      "phone_number": "+46 701 23 45",
+      "email": "anna.karlsson@example.se",
+      "department": "IT- och teknik",
+      "title": "Systemutvecklare",
+      "monthly_salary": 49000
+    },
+    {
+      "first_name": "Erik",
+      "last_name": "Andersson",
+      "phone_number": "+46 702 34 56",
+      "email": "erik.andersson@example.se",
+      "department": "IT- och teknik",
+      "title": "IT-konsult",
+      "monthly_salary": 50000
+    },
+    {
+      "first_name": "Emma",
+      "last_name": "Johansson",
+      "phone_number": "+46 703 45 67",
+      "email": "emma.johansson@example.se",
+      "department": "IT- och teknik",
+      "title": "IT-tekniker",
+      "monthly_salary": 38000
+    },
+    {
+      "first_name": "Karl",
+      "last_name": "Nilsson",
+      "phone_number": "+46 704 56 78",
+      "email": "karl.nilsson@example.se",
+      "department": "IT- och teknik",
+      "title": "UX-designer",
+      "monthly_salary": 44000
+    },
+    {
+      "first_name": "Sara",
+      "last_name": "Eriksson",
+      "phone_number": "+46 705 67 89",
+      "email": "sara.eriksson@example.se",
+      "department": "Ekonomi, juridik och administration",
+      "title": "Ekonom",
+      "monthly_salary": 43000
+    },
+    {
+      "first_name": "Johan",
+      "last_name": "Larsson",
+      "phone_number": "+46 706 78 90",
+      "email": "johan.larsson@example.se",
+      "department": "Ekonomi, juridik och administration",
+      "title": "Redovisningsekonom",
+      "monthly_salary": 42000
+    },
+    {
+      "first_name": "Maria",
+      "last_name": "Olsson",
+      "phone_number": "+46 707 89 01",
+      "email": "maria.olsson@example.se",
+      "department": "Ekonomi, juridik och administration",
+      "title": "Jurist",
+      "monthly_salary": 51000
+    },
+    {
+      "first_name": "Gustav",
+      "last_name": "Persson",
+      "phone_number": "+46 708 90 12",
+      "email": "gustav.persson@example.se",
+      "department": "Ekonomi, juridik och administration",
+      "title": "HR-specialist",
+      "monthly_salary": 42000
+    },
+    {
+      "first_name": "Sofia",
+      "last_name": "Svensson",
+      "phone_number": "+46 709 01 23",
+      "email": "sofia.svensson@example.se",
+      "department": "Marknadsföring, media och design",
+      "title": "Marknadskoordinator",
+      "monthly_salary": 34000
+    },
+    {
+      "first_name": "Viktor",
+      "last_name": "Gustafsson",
+      "phone_number": "+46 710 12 34",
+      "email": "viktor.gustafsson@example.se",
+      "department": "Marknadsföring, media och design",
+      "title": "Digital marknadsförare",
+      "monthly_salary": 38000
+    },
+    {
+      "first_name": "Linnea",
+      "last_name": "Pettersson",
+      "phone_number": "+46 711 23 45",
+      "email": "linnea.pettersson@example.se",
+      "department": "Marknadsföring, media och design",
+      "title": "Kommunikatör",
+      "monthly_salary": 39000
+    },
+    {
+      "first_name": "Fredrik",
+      "last_name": "Jonsson",
+      "phone_number": "+46 712 34 56",
+      "email": "fredrik.jonsson@example.se",
+      "department": "Sälj, inköp och logistik",
+      "title": "Säljare",
+      "monthly_salary": 38000
+    },
+    {
+      "first_name": "Elin",
+      "last_name": "Jansson",
+      "phone_number": "+46 713 45 67",
+      "email": "elin.jansson@example.se",
+      "department": "Sälj, inköp och logistik",
+      "title": "Inköpare",
+      "monthly_salary": 39000
+    },
+    {
+      "first_name": "David",
+      "last_name": "Bengtsson",
+      "phone_number": "+46 714 56 78",
+      "email": "david.bengtsson@example.se",
+      "department": "Sälj, inköp och logistik",
+      "title": "Logistiker",
+      "monthly_salary": 39000
+    },
+    {
+      "first_name": "Lena",
+      "last_name": "Lindberg",
+      "phone_number": "+46 715 67 89",
+      "email": "lena.lindberg@example.se",
+      "department": "Vård och omsorg",
+      "title": "Sjuksköterska",
+      "monthly_salary": 39000
+    },
+    {
+      "first_name": "Oskar",
+      "last_name": "Henriksson",
+      "phone_number": "+46 716 78 90",
+      "email": "oskar.henriksson@example.se",
+      "department": "Vård och omsorg",
+      "title": "Psykolog",
+      "monthly_salary": 47000
+    },
+    {
+      "first_name": "Jenny",
+      "last_name": "Lindgren",
+      "phone_number": "+46 717 89 01",
+      "email": "jenny.lindgren@example.se",
+      "department": "Bygg och anläggning",
+      "title": "Byggnadsingenjör",
+      "monthly_salary": 45000
+    },
+    {
+      "first_name": "Anders",
+      "last_name": "Bergström",
+      "phone_number": "+46 718 90 12",
+      "email": "anders.bergstrom@example.se",
+      "department": "Bygg och anläggning",
+      "title": "Snickare",
+      "monthly_salary": 36000
+    },
+    {
+      "first_name": "Malin",
+      "last_name": "Lundberg",
+      "phone_number": "+46 719 01 23",
+      "email": "malin.lundberg@example.se",
+      "department": "Utbildning och forskning",
+      "title": "Grundskollärare",
+      "monthly_salary": 38000
+    },
+    {
+      "first_name": "Per",
+      "last_name": "Holm",
+      "phone_number": "+46 720 12 34",
+      "email": "per.holm@example.se",
+      "department": "IT- och teknik",
+      "title": "Scrum Master",
+      "monthly_salary": 50000
+    }
+  ]
+}

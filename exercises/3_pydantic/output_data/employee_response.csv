@@ -1,0 +1,21 @@
+,first_name,last_name,phone_number,email,department,title,monthly_salary
+0,Anna,Karlsson,+46 701 23 45,anna.karlsson@example.se,IT- och teknik,Systemutvecklare,49000
+1,Erik,Andersson,+46 702 34 56,erik.andersson@example.se,IT- och teknik,IT-konsult,50000
+2,Emma,Johansson,+46 703 45 67,emma.johansson@example.se,IT- och teknik,IT-tekniker,38000
+3,Karl,Nilsson,+46 704 56 78,karl.nilsson@example.se,IT- och teknik,UX-designer,44000
+4,Sara,Eriksson,+46 705 67 89,sara.eriksson@example.se,"Ekonomi, juridik och administration",Ekonom,43000
+5,Johan,Larsson,+46 706 78 90,johan.larsson@example.se,"Ekonomi, juridik och administration",Redovisningsekonom,42000
+6,Maria,Olsson,+46 707 89 01,maria.olsson@example.se,"Ekonomi, juridik och administration",Jurist,51000
+7,Gustav,Persson,+46 708 90 12,gustav.persson@example.se,"Ekonomi, juridik och administration",HR-specialist,42000
+8,Sofia,Svensson,+46 709 01 23,sofia.svensson@example.se,"Marknadsföring, media och design",Marknadskoordinator,34000
+9,Viktor,Gustafsson,+46 710 12 34,viktor.gustafsson@example.se,"Marknadsföring, media och design",Digital marknadsförare,38000
+10,Linnea,Pettersson,+46 711 23 45,linnea.pettersson@example.se,"Marknadsföring, media och design",Kommunikatör,39000
+11,Fredrik,Jonsson,+46 712 34 56,fredrik.jonsson@example.se,"Sälj, inköp och logistik",Säljare,38000
+12,Elin,Jansson,+46 713 45 67,elin.jansson@example.se,"Sälj, inköp och logistik",Inköpare,39000
+13,David,Bengtsson,+46 714 56 78,david.bengtsson@example.se,"Sälj, inköp och logistik",Logistiker,39000
+14,Lena,Lindberg,+46 715 67 89,lena.lindberg@example.se,Vård och omsorg,Sjuksköterska,39000
+15,Oskar,Henriksson,+46 716 78 90,oskar.henriksson@example.se,Vård och omsorg,Psykolog,47000
+16,Jenny,Lindgren,+46 717 89 01,jenny.lindgren@example.se,Bygg och anläggning,Byggnadsingenjör,45000
+17,Anders,Bergström,+46 718 90 12,anders.bergstrom@example.se,Bygg och anläggning,Snickare,36000
+18,Malin,Lundberg,+46 719 01 23,malin.lundberg@example.se,Utbildning och forskning,Grundskollärare,38000
+19,Per,Holm,+46 720 12 34,per.holm@example.se,IT- och teknik,Scrum Master,50000

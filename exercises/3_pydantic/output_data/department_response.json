@@ -1,0 +1,39 @@
+{
+  "results": [
+    {
+      "department": "IT- och teknik",
+      "description": "Ansvarar för att utveckla, implementera och underhålla företagets IT-system, nätverk och tekniska infrastruktur för att säkerställa effektivitet och innovation.",
+      "contact_person": "Erik Andersson"
+    },
+    {
+      "department": "Ekonomi, juridik och administration",
+      "description": "Hantera företagets finansiella planering, redovisning, juridiska frågor samt övergripande administrativa processer för att stödja organisationens drift och efterlevnad.",
+      "contact_person": "Maria Olsson"
+    },
+    {
+      "department": "Marknadsföring, media och design",
+      "description": "Skapa och implementera strategier för varumärkesbyggande, kommunikation och produktmarknadsföring genom olika kanaler, inklusive digital media och grafisk design.",
+      "contact_person": "Linnea Pettersson"
+    },
+    {
+      "department": "Sälj, inköp och logistik",
+      "description": "Fokusera på försäljning av produkter eller tjänster, hantering av inköp från leverantörer samt optimering av logistikflöden för att säkerställa en effektiv leveranskedja.",
+      "contact_person": "Elin Jansson"
+    },
+    {
+      "department": "Vård och omsorg",
+      "description": "Erbjuda professionell vård och stöd till individer, vilket kan innefatta medicinska tjänster, personlig assistans och rehabilitering för att främja hälsa och välbefinnande.",
+      "contact_person": "Oskar Henriksson"
+    },
+    {
+      "department": "Bygg och anläggning",
+      "description": "Ansvara för planering, design, konstruktion och underhåll av byggnader och infrastrukturprojekt, från idé till färdigställande.",
+      "contact_person": "Jenny Lindgren"
+    },
+    {
+      "department": "Utbildning och forskning",
+      "description": "Utveckla och leverera utbildningsprogram, genomföra vetenskaplig forskning samt sprida kunskap inom relevanta ämnesområden för att främja lärande och innovation.",
+      "contact_person": "Malin Lundberg"
+    }
+  ]
+}
