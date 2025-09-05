@@ -212,3 +212,6 @@ __marimo__/
 
 # duckdb
 *.duckdb
+
+# project specific
+grade_outputs*
