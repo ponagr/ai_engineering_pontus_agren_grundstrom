@@ -1,0 +1,22 @@
+Fråga: Vad vill du uppnå i framtiden, och varför?
+
+E-nivå (enkla, korta och delvis utvecklade svar)
+
+student_text_1.txt
+Jag vill ha ett jobb i framtiden. Det är viktigt så jag kan tjäna pengar. Jag vill också resa.
+
+student_text_2.txt
+I framtiden vill jag bo i en egen lägenhet. Då kan jag bestämma själv. Jag vill också skaffa en hund.
+
+C-nivå (mer utvecklade svar med motivering och viss struktur)
+
+student_text_3.txt
+Jag vill utbilda mig till elektriker. Jag tycker om att jobba praktiskt och vill ha ett yrke där man alltid behövs. Det känns också tryggt eftersom man kan få jobb på många olika platser. Dessutom vill jag kunna försörja en framtida familj.
+
+student_text_4.txt
+Mitt mål i framtiden är att arbeta som journalist. Jag vill berätta om viktiga saker som händer i världen och hjälpa människor att förstå dem. För att nå dit måste jag studera vidare och öva på att skriva mer varierat. Jag tror också att det är bra att resa och få egna erfarenheter.
+
+A-nivå (välutvecklat, reflekterande och nyanserat svar)
+
+student_text_5.txt
+I framtiden vill jag bli läkare, framför allt för att jag vill kunna göra en skillnad för människor när de befinner sig i svåra situationer. Yrket lockar mig eftersom det förenar vetenskaplig kunskap med mänskliga möten, vilket jag ser som både en utmaning och en möjlighet. Jag är medveten om att vägen dit är lång och krävande, men jag ser det som en investering i både min egen utveckling och i samhällets framtid. Dessutom hoppas jag att jag i framtiden kan kombinera mitt arbete med forskning för att bidra till nya medicinska framsteg.
