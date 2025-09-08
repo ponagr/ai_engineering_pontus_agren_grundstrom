@@ -1,0 +1,39 @@
+{
+   "objects": [
+      {
+         "address": "Vasagatan 12, Lgh 301",
+         "city": "Stockholm",
+         "price_sek": 4850000,
+         "monthly_fee": 3800,
+         "area": 75
+      },
+      {
+         "address": "Kungsladugårdsgatan 25B",
+         "city": "Göteborg",
+         "price_sek": 3200000,
+         "monthly_fee": 4500,
+         "area": 62
+      },
+      {
+         "address": "Södra Förstadsgatan 88, Vån 4",
+         "city": "Malmö",
+         "price_sek": 2750000,
+         "monthly_fee": 2900,
+         "area": 50
+      },
+      {
+         "address": "Ulltunalundsvägen 15B",
+         "city": "Uppsala",
+         "price_sek": 3950000,
+         "monthly_fee": 5100,
+         "area": 88
+      },
+      {
+         "address": "Linnégatan 4, Ö.g.",
+         "city": "Linköping",
+         "price_sek": 1995000,
+         "monthly_fee": 3400,
+         "area": 45
+      }
+   ]
+}
