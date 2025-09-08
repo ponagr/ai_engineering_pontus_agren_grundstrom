@@ -73,6 +73,7 @@ typing-extensions==4.15.0
 typing-inspection==0.4.1
 tzdata==2025.2
 urllib3==2.5.0
+-e file:///C:/Users/organ/Repos/ml_ai/ai_engineering_pontus_agren_grundstrom
 uvicorn==0.35.0
 wcwidth==0.2.13
 websockets==15.0.1
