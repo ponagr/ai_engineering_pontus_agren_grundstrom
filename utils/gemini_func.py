@@ -1,7 +1,23 @@
 from google import genai
 from dotenv import load_dotenv
 import os
+from pydantic import BaseModel
 
+# class ClassName(BaseModel):
+#     name: str 
+
+# lägg till: 
+# config={
+#         "response_mime_type": "application/json",
+#         "response_schema": list[ClassName],
+#     },
+# response = client.models.generate_content(model=model, contents=prompt, config={
+#         "response_mime_type": "application/json",
+#         "response_schema": list[ClassName],
+#     },)
+
+# output från response
+# my_recipes: list[ClassName] = response.parsed
 
 def fix_prompt(data = None, output_examples = None, rules: str = None, task: str = None, role: str = None, output_format: str = None) -> str:
     parts = []
@@ -23,7 +39,7 @@ def fix_prompt(data = None, output_examples = None, rules: str = None, task: str
     return prompt
 
 
-def ask_gemini(prompt: str, model="gemini-2.5-flash") -> str:
+def ask_gemini(prompt: str, model="gemini-2.5-flash", config=None) -> str:
     """
     Tips: Anropa fix_prompt() istället för en prompt direkt som argument för att bygga ihop en prompt direkt i anropet
     """
@@ -33,6 +49,6 @@ def ask_gemini(prompt: str, model="gemini-2.5-flash") -> str:
     if not prompt:
         prompt = "Hej Gemini! Detta är ett test för att se om funktionen fungerar. Svara kort: fungerar du?"
     
-    response = client.models.generate_content(model=model, contents=prompt)
+    response = client.models.generate_content(model=model, contents=prompt, config=config)
     
     return response.text
