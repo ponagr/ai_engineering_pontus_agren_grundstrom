@@ -25,7 +25,7 @@ async def read_glossary():
 @app.get("/glossary/")
 async def filter_glossary(word: str = Query(None, description="Filter by word in glossary")):
     if word:
-        return [glos for glos in glossarys if glos.word.casefold() == word.casefold()]
+        return [glos for glos in glossarys if glos.word.casefold() in word.casefold()]
 
 
 # c) Turn your API into a CRUD API, so that you can add glossary, update and delete glossary.
