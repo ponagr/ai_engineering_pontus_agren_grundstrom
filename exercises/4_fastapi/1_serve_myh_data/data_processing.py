@@ -1,6 +1,7 @@
 import pandas as pd
 from constants import FOLDER_PATH, FILE_NAME
 from pydantic import BaseModel, Field
+import json
 
 
 # utbildningsområde: str
@@ -34,8 +35,37 @@ from pydantic import BaseModel, Field
 
 
 def read_excel(filename=FILE_NAME, nr=3):
-    return pd.read_excel(FOLDER_PATH/filename, sheet_name=f"Tabell {nr}", header=5).to_json()
+    df = pd.read_excel(FOLDER_PATH/filename, sheet_name=f"Tabell {nr}", header=5)
+    df.columns = df.columns.str.strip().str.replace("\n", " ")
+    # data.columns = (data.columns.str.replace(" ", "_", regex=False).str.replace("-", "_", regex=False).str.replace("_%", "").str.strip().str.casefold())
+    return df.drop(columns=['Diarienummer','SeQF nivå','Sökta platser per utbildningsomgång','Beviljade platser utbildningsomgång 1','Beviljade platser utbildningsomgång 2','Beviljade platser utbildningsomgång 3','Beviljade platser utbildningsomgång 4','Beviljade platser utbildningsomgång 5'])
 
+
+def tabell_data():
+    df = read_excel()
+    return df.to_dict(orient="records")
+    
+
+class Tabell(BaseModel):
+    utbildningsområde: str
+    sun5_inriktning: str
+    sun5_inriktning_namn: str
+    utbildningsnamn: str
+    beslut: str
+    flera_kommuner: str
+    antal_kommuner: int
+    län: str
+    kommun: str
+    yh_poäng: int
+    studieform: str
+    studietakt: int
+    typ_av_examen: str
+    utbildningsanordnare_administrativ_enhet: str
+    huvudmannatyp: str
+    sökta_utbildningsomgångar: int
+    beviljade_utbildningsomgångar: int
+    sökta_platser_totalt: int
+    beviljade_platser_totalt: int
 
 # class Tabell(BaseModel):
 #     diarienummer: str
