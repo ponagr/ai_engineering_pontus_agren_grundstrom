@@ -1,7 +1,24 @@
-import pandas as pd
-from constants import FOLDER_PATH, FILE_NAME
-from pydantic import BaseModel, Field
 import json
+from fastapi.responses import JSONResponse
+
+
+class DataExplorer:
+    def __init__(self, df, limit=100):
+        self._df_full = df
+        self._df = df.head(limit)
+    
+    @property
+    def df(self):
+        return self._df
+    
+    @property
+    def df_full(self):
+        return self._df_full
+    
+    
+    def json_response(self):
+        json_data = self.df.to_json(orient="records")
+        return JSONResponse(json.loads(json_data))
 
 
 # utbildningsområde: str
