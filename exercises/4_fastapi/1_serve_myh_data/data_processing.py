@@ -10,16 +10,18 @@ class DataExplorer:
     @property
     def df(self):
         return self._df
-    
     @property
     def df_full(self):
         return self._df_full
+    
     
     def summary(self):
         self._df = self.df_full.describe().drop("count").T.reset_index()
         return self.json_response()
     
-    
+    # b) Make an API endpoint where you serve table 3 in JSON format for a read operation.
+    # c) Make endpoints where you could filter out a particular school.
+    # d) Make endpoints where you could filter out a particular field.
     def filter(self, school, field):
         self._df = self.df_full
         if school:
@@ -29,30 +31,29 @@ class DataExplorer:
         
         return self.json_response()
     
+    #e) Make endpoint for approved (beviljad) and one for not approved (avslag).
+    def decision(self, approved: bool):
+        if approved:
+            df = self.df_full[self.df_full["Beviljade platser totalt"] > 0]
+        else:
+            df = self.df_full[self.df_full["Beviljade platser totalt"] == 0] 
+        self._df = df
+        
+        return self.json_response()
     
+    # f) Make an endpoint for some KPIs that you think is interesting for a particular stakeholder in mind.
     def kpis(self, column):
-        self._df = self.df_full
-        
-        if column.casefold() in self._df.columns.str.casefold():
-            # hitta rätt faktisk kolumn (behöver pga casefold)
-            column = [c for c in self._df.columns if c.casefold() == column.casefold()][0]
-            new_df = self._df.groupby(column)["Beslut"].value_counts().reset_index()
-                        # df
-            new_df = new_df.pivot(
-                index=column, 
-                columns="Beslut", 
-                values="count"
-            ).reset_index()
+        if column:
+            self._df = self.df_full
+            if column.casefold() in self._df.columns.str.casefold():
+                column = [c for c in self._df.columns if c.casefold() == column.casefold()][0]
 
-            # byt namn på kolumner om du vill
-            new_df = new_df.rename(columns={
-                "Avslag": "Antal Avslag",
-                "Beviljad": "Antal Beviljade"
-            })
-            json_data = new_df.to_json(orient="records")
-            return JSONResponse(json.loads(json_data)) 
-        
-        return self.summary()
+                new_df = self._df.groupby(column)[["Sökta platser totalt", "Beviljade platser totalt"]].sum().reset_index()
+                new_df["Beviljade platser %"] = round(new_df["Beviljade platser totalt"] / new_df["Sökta platser totalt"] * 100, 2)
+
+                self._df = new_df.sort_values(by=["Beviljade platser %","Sökta platser totalt"], ascending=False)
+
+        return self.json_response()  
         
             # för varje skola, % på hur många beviljade, baserat på sökta utbildningsomgångar.sum()/beviljade utbildningsomgångar, och sökta/beviljade platser totalt
             # mest avslagna/beviljade ansökningar
