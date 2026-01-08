@@ -10,6 +10,7 @@ app = FastAPI()
 @app.get("/movies")
 async def read_movies():
     movies = query_duckdb("FROM movies;")
+    
     return movies.to_dict(orient="records")
 
 
@@ -19,10 +20,14 @@ async def create_movie(query: Prompt):
     movie = result.output
     
     # db logic to save movie
+    
     # protect against SQL-injections
+    # f"INSERT INTO movies VALUES ({movie.title}, {movie.year}, osv)) 
+    # -- DETTA ÄR farlig för risk till sql injections, därför kör man med parameters och (?,?,?,?) istället
+    # Detta fixas behind the scenes åt oss nu istället med duckdb
     query_duckdb(
         "INSERT INTO movies VALUES (?,?,?,?)",
-        parameters=[movie.title, movie.year, movie.genre, movie.rating],
+        parameters=[movie.title, movie.year, movie.genre, movie.rating]
     )
     
     return movie
