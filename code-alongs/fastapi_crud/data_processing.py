@@ -32,6 +32,9 @@ def library_data(filename):
     json_data = read_json(filename)
     return Library.model_validate(json_data)
 
+class Prompt(BaseModel):
+    prompt: str
+
 if __name__ == "__main__":
     library = library_data("library.json")
     pprint(library)

@@ -1,7 +1,8 @@
 from fastapi import FastAPI, Query
-from data_processing import library_data, Book
+from data_processing import library_data, Book, Prompt
 from pprint import pprint
 from constants import CURRENT_YEAR
+from agent import book_agent
 
 library = library_data("library.json")
 books = library.books
@@ -31,6 +32,14 @@ async def filter_books(
         filtered_books = [book for book in filtered_books if author.casefold() == book.author.casefold()]
         
     return filtered_books
+
+
+@app.post("/books/prompt_book")
+async def prompt_book(query: Prompt):
+    result = await book_agent.run(query.prompt)
+    book = result.output
+    
+    return book
 
 
 @app.post("/books/create_book")
