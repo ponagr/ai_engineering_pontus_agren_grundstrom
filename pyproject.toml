@@ -13,5 +13,6 @@ dependencies = [
     "pydantic-ai>=1.39.0",
     "python-dotenv>=1.2.1",
     "scikit-learn>=1.8.0",
+    "streamlit>=1.52.2",
     "uvicorn>=0.40.0",
 ]
