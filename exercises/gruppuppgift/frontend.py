@@ -32,7 +32,6 @@ def handle_user_input():
     
     prompt = question_input or input
     if prompt:
-            
         st.session_state.messages.append({"role": "user", "content": prompt})
 
         bot_response = bot.chat(prompt).get("ai")
